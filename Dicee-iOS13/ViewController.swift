@@ -29,9 +29,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
  
         // who         what  = value
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-        diceImageView1.alpha = 0.5
-        
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")           
         diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
         // 이미지를 보고 선택할 수 있게 해주는 것은 imageLiteral 인데
         // 현재 내 xcode에서는 에러가 발생함. 해결 방법은 #imageLiteral( 을 입력해주면 된다.
@@ -41,5 +39,11 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
+        diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
+    
+        
+    }
 }
 
